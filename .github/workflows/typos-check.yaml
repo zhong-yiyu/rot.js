@@ -15,4 +15,4 @@ jobs:
       - name: Check spelling of repo
         uses: crate-ci/typos@master
         with: 
-          files: ['./src/*','./tests/*','./examples/*']
+          files: './src/*','./tests/*','./examples/*'
