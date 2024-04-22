@@ -12,9 +12,15 @@ jobs:
     steps:
       - name: Checkout actions repository
         uses: actions/checkout@v4
-      - name: Check spelling of repo
+      - name: Check spelling of src directory.
         uses: crate-ci/typos@master
         with: 
           files: './src/*'
+      - name: Check spelling of manual directory.
+        uses: crate-ci/typos@master
+        with: 
+          files: './manual/*'
+      - name: Check spelling of tests directory.
+        uses: crate-ci/typos@master
+        with: 
           files: './tests/*'
-          files: './examples/*'
